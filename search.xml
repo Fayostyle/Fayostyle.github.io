@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[学习大纲]]></title>
       <url>%2F2016%2F11%2F21%2F%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2%2F</url>
-      <content type="text"><![CDATA[java web学习大纲 今天花两个小时好好谢谢这篇文章，有个明确的学习路线 ##]]></content>
+      <content type="text"><![CDATA[java web学习大纲 今天花两个小时好好谢谢这篇文章，有个明确的学习路线 java开发环境搭建 java基础知识 JDBC/Servlet 数据库开发技术 EJB技术和企业级应用服务器的使用（如 WebSphere、Weblogic、Sun Applcation Server或JBOSS等，目前Sun Applcation Server 9.X和JBOSS) 主流框架 springMVC + ibatis + jQuery + Ajax java并发编程，一些中间件，如分布式缓存，RMS]]></content>
     </entry>
 
     

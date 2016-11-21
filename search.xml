@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[在github和coding上同时部署hexo]]></title>
+      <url>%2F2016%2F11%2F21%2F%E5%9C%A8github%E5%92%8Ccoding%E4%B8%8A%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2hexo%2F</url>
+      <content type="text"><![CDATA[github和codinggithub是国外的代码托管平台，coding则是国内的。两者都是使用git这一工具。 他曾经说过]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[again]]></title>
       <url>%2F2016%2F11%2F20%2Fagain%2F</url>
       <content type="text"><![CDATA[i don’t know what happened! test hi! helo fuck you 123456789public class &#123; public int i; private doble j; @override for(;;) &#123; return 0; &#125;&#125;]]></content>

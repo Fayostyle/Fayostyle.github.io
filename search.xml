@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[open vpn 搭建免流服务器]]></title>
+      <url>%2F2016%2F11%2F24%2Fopen-vpn-%E6%90%AD%E5%BB%BA%E5%85%8D%E6%B5%81%E6%9C%8D%E5%8A%A1%E5%99%A8%2F</url>
+      <content type="text"><![CDATA[准备工作 云服务器一台，我这里刚好使用腾讯的学生一元云服务器。重装操作系统，选择CentOS6.6 64位 Xshell软件 开始 首先使用Xshell软件连接到远程的服务器接下来填入用户名,密码(登录远端服务器的用户名和密码) 按照骚逼汪的教程,在terminal中输入wget http://sbwml.cn/vpn6;chmod +x vpn6;./vpn6中间需要用到授权码,就在网页上.这是常规VPS安装脚本, 接下来等待安装即可.中途会需要设置openvpn的连接账号和密码.即是到时候手机端连接的账号密码 安装完成后,复制返回的下载链接,在浏览器中打开下载到本地解压后打开,我们需要的文件是这个,需要在手机端的openvpn配置这个文件 手机上安装openvpn,导入OpenVPN配置文件,输入账号密码就可以连接了 至此结束在前面只建立了一个手机端的用户, 可以建立多个用户.在terminal中输入 echo 账号 密码 &gt;&gt;/passwd 即可新建一个用户 &gt;&gt;是在后面追加, &gt;是覆盖!注意不要弄错了]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[windows10下安装myeclipse]]></title>
       <url>%2F2016%2F11%2F21%2Fwindows10%E4%B8%8B%E5%AE%89%E8%A3%85myeclipse%2F</url>
       <content type="text"><![CDATA[##下载myeclipse MyEclipse企业级工作平台（MyEclipse Enterprise Workbench ，简称MyEclipse）是对EclipseIDE的扩展，利用它我们可以在数据库和JavaEE的开发、发布以及应用程序服务器的整合方面极大的提高工作效率。它是功能丰富的JavaEE集成开发环境，包括了完备的编码、调试、测试和发布功能，完整支持HTML,Struts,JSP,CSS,Javascript,Spring,SQL,Hibernate。 MyEclipse 是一个十分优秀的用于开发Java, J2EE的 Eclipse 插件集合，MyEclipse的功能非常强大，支持也十分广泛，尤其是对各种开源产品的支持十分不错。MyEclipse目前支持Java Servlet,AJAX, JSP, JSF, Struts,Spring, Hibernate,EJB3,JDBC数据库链接工具等多项功能。可以说MyEclipse几乎囊括了目前所有主流开源产品的专属eclipse开发工具。 在结构上，MyEclipse的特征可以被分为7类： 1． JavaEE模型 2． WEB开发工具 3． EJB开发工具 4． 应用程序服务器的连接器 5． JavaEE项目部署服务 6． 数据库服务 7． MyEclipse整合帮助 对于以上每一种功能上的类别，在Eclipse中都有相应的功能部件，并通过一系列的插件来实现它们。MyEclipse结构上的这种模块化，可以让我们在不影响其他模块的情况下，对任一模块进行单独的扩展和升级。 简单而言，MyEclipse是Eclipse的插件，也是一款功能强大的JavaEE集成开发环境，支持代码编写、配置、测试以及除错，MyEclipse6.0以前版本需先安装Eclipse。MyEclipse6.0以后版本安装时不需安装Eclipse。]]></content>

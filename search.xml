@@ -3,23 +3,23 @@
   
     
     <entry>
-      <title><![CDATA[学习大纲]]></title>
+      <title><![CDATA[windows10下安装myeclipse]]></title>
+      <url>%2F2016%2F11%2F21%2Fwindows10%E4%B8%8B%E5%AE%89%E8%A3%85myeclipse%2F</url>
+      <content type="text"><![CDATA[##下载myeclipse MyEclipse企业级工作平台（MyEclipse Enterprise Workbench ，简称MyEclipse）是对EclipseIDE的扩展，利用它我们可以在数据库和JavaEE的开发、发布以及应用程序服务器的整合方面极大的提高工作效率。它是功能丰富的JavaEE集成开发环境，包括了完备的编码、调试、测试和发布功能，完整支持HTML,Struts,JSP,CSS,Javascript,Spring,SQL,Hibernate。 MyEclipse 是一个十分优秀的用于开发Java, J2EE的 Eclipse 插件集合，MyEclipse的功能非常强大，支持也十分广泛，尤其是对各种开源产品的支持十分不错。MyEclipse目前支持Java Servlet,AJAX, JSP, JSF, Struts,Spring, Hibernate,EJB3,JDBC数据库链接工具等多项功能。可以说MyEclipse几乎囊括了目前所有主流开源产品的专属eclipse开发工具。 在结构上，MyEclipse的特征可以被分为7类： 1． JavaEE模型 2． WEB开发工具 3． EJB开发工具 4． 应用程序服务器的连接器 5． JavaEE项目部署服务 6． 数据库服务 7． MyEclipse整合帮助 对于以上每一种功能上的类别，在Eclipse中都有相应的功能部件，并通过一系列的插件来实现它们。MyEclipse结构上的这种模块化，可以让我们在不影响其他模块的情况下，对任一模块进行单独的扩展和升级。 简单而言，MyEclipse是Eclipse的插件，也是一款功能强大的JavaEE集成开发环境，支持代码编写、配置、测试以及除错，MyEclipse6.0以前版本需先安装Eclipse。MyEclipse6.0以后版本安装时不需安装Eclipse。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[java web学习大纲]]></title>
       <url>%2F2016%2F11%2F21%2F%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2%2F</url>
-      <content type="text"><![CDATA[java web学习大纲 两个小时好好写写这篇文章，有个明确的学习路线 java开发环境搭建&lt;–! more –&gt; java基础知识 JDBC/Servlet 数据库开发技术 EJB技术和企业级应用服务器的使用（如 WebSphere、Weblogic、Sun Applcation Server或JBOSS等，目前Sun Applcation Server 9.X和JBOSS) 主流框架 springMVC + ibatis + jQuery + Ajax java并发编程，一些中间件，如分布式缓存，RMS]]></content>
+      <content type="text"><![CDATA[java web学习大纲 花两个小时好好写写这篇文章，有个明确的学习路线 java开发环境搭建 java基础知识 JDBC/Servlet 数据库开发技术 EJB技术和企业级应用服务器的使用（如 WebSphere、Weblogic、Sun Applcation Server或JBOSS等，目前Sun Applcation Server 9.X和JBOSS) 主流框架 springMVC + ibatis + jQuery + Ajax java并发编程，一些中间件，如分布式缓存，RMS java开发环境搭建JDK下载和配置 windows下JDK的下载安装很简单，百度一下oracle官网下载地址，如果oracle下载太慢，也可以选择国内其他下载站，之后一路next就行了。 ubuntu系统下1sudo apt install java windows下，安装jdk需要配置环境变量，具体百度。ubuntu下可以不用配置，但最好还是配置，之后安装tomcat需要用到JAVA_HOME环境变量，eclipse不需要。 初学的话，不用IDE的确是很好的，一行一行敲下来会遇到很多问题，解决下来会对基本的语法和javaAPI的使用更为得心应手。比如：12BufferedReader buff = new BufferedReader(new InputStreamReader(System.in)); 将System.in传入的字节流，通过InputStreamReader转换流转换为字符流，放入缓冲区，一个程序只需要创建一个BufferedReader实例就可以多次使用buff.readLine()方法将输入读进缓冲区 ###eclipse的安装与配置 eclipse是一个以插件为主的开发IDE，在eclipse官网下载JAVASE版本，之后自行安装JAVAEE插件即可，也可以安装其他如C/C++的插件进行开发。 java web的开发，安装Myeclipse会更加利于开发，因为它已经集成了JAVAEE开发所需要的工具。详情可以戳windows下安装myeclipse tomcat的安装配置Mysql的安装配置##]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[在github和coding上同时部署hexo]]></title>
       <url>%2F2016%2F11%2F21%2F%E5%9C%A8github%E5%92%8Ccoding%E4%B8%8A%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2hexo%2F</url>
-      <content type="text"><![CDATA[github和codinggithub是国外的代码托管平台，coding则是国内的。两者都是使用git这一工具。 他曾经说过]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[again]]></title>
-      <url>%2F2016%2F11%2F20%2Fagain%2F</url>
-      <content type="text"><![CDATA[i don’t know what happened! test hi! helo fuck you 123456789public class &#123; public int i; private doble j; @override for(;;) &#123; return 0; &#125;&#125;]]></content>
+      <content type="text"><![CDATA[github和codinggithub是国外的代码托管平台，coding则是国内的。两者都是使用git这一工具。]]></content>
     </entry>
 
     

@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java web," />
+  <meta name="keywords" content="java web,Servlet," />
 
 
 
@@ -102,28 +102,57 @@
 
 
 
-<meta name="description" content="java web学习大纲 花两个小时好好写写这篇文章，有个明确的学习路线
-
-java开发环境搭建
-java基础知识
-JDBC/Servlet">
+<meta name="description" content="#Servlet学习:
+大纲
+servlet的相关概念和接口
+servlet的执行过程
+servlet路径映射
+缺省servlet
+servlet生命周期(重点)
+servlet自动加载
+servlet线程安全
+ServletConfig对象
+servlet接口详解
+ServletContext对象">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java web学习大纲">
-<meta property="og:url" content="http://yoursite.com/2016/11/21/学习大纲/index.html">
+<meta property="og:title" content="Servlet学习">
+<meta property="og:url" content="http://yoursite.com/2016/11/27/Servlet学习/index.html">
 <meta property="og:site_name" content="篮球rap堆代码">
-<meta property="og:description" content="java web学习大纲 花两个小时好好写写这篇文章，有个明确的学习路线
-
-java开发环境搭建
-java基础知识
-JDBC/Servlet">
-<meta property="og:updated_time" content="2016-11-24T06:46:10.724Z">
+<meta property="og:description" content="#Servlet学习:
+大纲
+servlet的相关概念和接口
+servlet的执行过程
+servlet路径映射
+缺省servlet
+servlet生命周期(重点)
+servlet自动加载
+servlet线程安全
+ServletConfig对象
+servlet接口详解
+ServletContext对象">
+<meta property="og:image" content="http://yoursite.com/uploads/blog.png">
+<meta property="og:image" content="http://yoursite.com/uploads/blog3.png">
+<meta property="og:image" content="http://yoursite.com/uploads/blog2.png">
+<meta property="og:image" content="http://yoursite.com/uploads/blog7.png">
+<meta property="og:image" content="http://yoursite.com/uploads/blog4.png">
+<meta property="og:image" content="http://yoursite.com/uploads/blog5.png">
+<meta property="og:image" content="http://yoursite.com/uploads/blog6.png">
+<meta property="og:updated_time" content="2016-11-26T21:13:23.402Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java web学习大纲">
-<meta name="twitter:description" content="java web学习大纲 花两个小时好好写写这篇文章，有个明确的学习路线
-
-java开发环境搭建
-java基础知识
-JDBC/Servlet">
+<meta name="twitter:title" content="Servlet学习">
+<meta name="twitter:description" content="#Servlet学习:
+大纲
+servlet的相关概念和接口
+servlet的执行过程
+servlet路径映射
+缺省servlet
+servlet生命周期(重点)
+servlet自动加载
+servlet线程安全
+ServletConfig对象
+servlet接口详解
+ServletContext对象">
+<meta name="twitter:image" content="http://yoursite.com/uploads/blog.png">
 
 
 
@@ -151,13 +180,13 @@ JDBC/Servlet">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/21/学习大纲/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/27/Servlet学习/"/>
 
 
 
 
 
-  <title> java web学习大纲 | 篮球rap堆代码 </title>
+  <title> Servlet学习 | 篮球rap堆代码 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -321,7 +350,7 @@ JDBC/Servlet">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/21/学习大纲/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/27/Servlet学习/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="fayostyle">
@@ -345,7 +374,7 @@ JDBC/Servlet">
             
             
               
-                java web学习大纲
+                Servlet学习
               
             
           </h1>
@@ -358,8 +387,8 @@ JDBC/Servlet">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-21T17:30:16+08:00">
-                2016-11-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-27T04:35:05+08:00">
+                2016-11-27
               </time>
             
 
@@ -374,8 +403,8 @@ JDBC/Servlet">
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/11/21/学习大纲/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/21/学习大纲/" itemprop="commentCount"></span>
+                <a href="/2016/11/27/Servlet学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/27/Servlet学习/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -385,7 +414,7 @@ JDBC/Servlet">
 
           
           
-             <span id="/2016/11/21/学习大纲/" class="leancloud_visitors" data-flag-title="java web学习大纲">
+             <span id="/2016/11/27/Servlet学习/" class="leancloud_visitors" data-flag-title="Servlet学习">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -410,32 +439,120 @@ JDBC/Servlet">
       
 
       
-        <h1 id="java-web学习大纲"><a href="#java-web学习大纲" class="headerlink" title="java web学习大纲"></a>java web学习大纲</h1><p><strong> 花两个小时好好写写这篇文章，有个明确的学习路线</strong></p>
-<ol>
-<li>java开发环境搭建</li>
-<li>java基础知识</li>
-<li>JDBC/Servlet<a id="more"></a></li>
-<li>数据库开发技术</li>
-<li>EJB技术和企业级应用服务器的使用（如 WebSphere、Weblogic、Sun Applcation Server或JBOSS等，目前Sun Applcation Server 9.X和JBOSS)</li>
-<li>主流框架 springMVC + ibatis + jQuery + Ajax</li>
-<li>java并发编程，一些中间件，如分布式缓存，RMS</li>
+        <p>#Servlet学习:</p>
+<h2 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h2><ol>
+<li>servlet的相关概念和接口</li>
+<li>servlet的执行过程</li>
+<li>servlet路径映射</li>
+<li>缺省servlet</li>
+<li>servlet生命周期(重点)</li>
+<li>servlet自动加载</li>
+<li>servlet线程安全</li>
+<li>ServletConfig对象</li>
+<li>servlet接口详解</li>
+<li>ServletContext对象</li>
 </ol>
-<h2 id="java开发环境搭建"><a href="#java开发环境搭建" class="headerlink" title="java开发环境搭建"></a>java开发环境搭建</h2><h3 id="JDK下载和配置"><a href="#JDK下载和配置" class="headerlink" title="JDK下载和配置"></a>JDK下载和配置</h3><ul>
-<li>windows下JDK的下载安装很简单，百度一下oracle官网下载地址，如果oracle下载太慢，也可以选择国内其他下载站，之后一路next就行了。</li>
-<li>ubuntu系统下<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install java</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="如何开发一个servlet"><a href="#如何开发一个servlet" class="headerlink" title="如何开发一个servlet"></a>如何开发一个servlet</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li><p>编写java类,继承HttpServlet类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> cn.fayostyle.servlet1;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"></div><div class="line"><span class="keyword">import</span> javax.servlet.ServletException;</div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</div><div class="line"></div><div class="line"><span class="keyword">import</span> sun.java2d.pipe.RenderQueue;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">First_Servlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</div><div class="line">        resp.getWriter().write(<span class="string">"This is the first Servlet!"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>重写doGet和doPost方法</p>
+</li>
+<li>Servlet程序交给tomcat服务器运行<ul>
+<li>Servlet程序的class字节码文件拷贝到WEB-INF/classes目录</li>
+<li>在web.xml文件中进行<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"> <span class="tag">&lt;<span class="name">servlet</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>First_Servlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>cn.fayostyle.servlet1.First_Servlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>First_Servlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/first<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>windows下，安装jdk需要配置环境变量，具体百度。ubuntu下可以不用配置，但最好还是配置，之后安装tomcat需要用到JAVA_HOME环境变量，eclipse不需要。</p>
+</li>
+</ol>
+<p>在将Servlet部署到tomcat服务器中出现这个问题<br><img src="/uploads/blog.png" alt="图片1"><br><img src="/uploads/blog3.png" alt="图片3"><br>1、这个是因为server中已经存在了一个  把server视图打开删除以前那个就可以了<br>2、在运行时删除以前的服务器,选中新建一个服务器就行了<br><img src="/uploads/blog2.png" alt="图片2"><br>出现问题,将项目部署到了tomcat进行访问,却出现404,在eclipse上启动后,甚至连tomcat首页localhost:8080都访问不到.</p>
+<blockquote>
+<p>一开始以为是自己的问题,没想到过了一天年后,重新开机打开eclipse运行又可以了….<br>但是为何打开tomcat文件夹webapp目录,没有这个项目,也就是说没被拷贝过去.?<br>通过反射:</p>
+<ol>
+<li>构造FirstServlet对象</li>
+<li>调用FirstServlet里面的方法  </li>
+</ol>
+</blockquote>
+<h2 id="Servlet的映射路径匹配"><a href="#Servlet的映射路径匹配" class="headerlink" title="Servlet的映射路径匹配"></a>Servlet的映射路径匹配</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>First_Servlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>cn.fayostyle.servlet1.First_Servlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>First_Servlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/first<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="精确匹配"><a href="#精确匹配" class="headerlink" title="精确匹配"></a>精确匹配</h3><p><url-pattern>/first</url-pattern>只能匹配<a href="http://localhost:8080/project_name/first" target="_blank" rel="external">http://localhost:8080/project_name/first</a></p>
+<p><url-pattern>/test/first</url-pattern>只能匹配<a href="http://localhost:8080/project_name/test/first" target="_blank" rel="external">http://localhost:8080/project_name/test/first</a></p>
+<h3 id="模糊匹配"><a href="#模糊匹配" class="headerlink" title="模糊匹配"></a>模糊匹配</h3><ol>
+<li><url-pattern>/<em></em></url-pattern> 号为通配符,匹配任意路径,甚至为空也可以<a href="http://localhost:8080/project_name/*" target="_blank" rel="external">http://localhost:8080/project_name/*</a><br><url-pattern>/test/<em></em></url-pattern> 匹配<a href="http://localhost:8080/project_name/test/" target="_blank" rel="external">http://localhost:8080/project_name/test/</a></li>
+<li><url-pattern>*.后缀名</url-pattern></li>
+</ol>
 <ul>
-<li>初学的话，不用IDE的确是很好的，一行一行敲下来会遇到很多问题，解决下来会对基本的语法和javaAPI的使用更为得心应手。比如：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">BufferedReader buff = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(System.in));</div></pre></td></tr></table></figure>
+<li>*.do</li>
+<li>*.action</li>
+<li>*.html(伪静态:实际是一个Servlet)</li>
+</ul>
+<ol>
+<li><strong>url-pattern要么以/开头,要么以*开头</strong></li>
+<li><strong>不能同时使用两种模糊匹配如:/test/*.do</strong></li>
+<li><strong>当输入的URL有多个servlet同时别匹配的情况下</strong></li>
+</ol>
+<ul>
+<li>精确匹配优先</li>
+<li>以后缀名结尾的模糊匹配优先级最低<br><img src="/uploads/blog7.png" alt="图片"></li>
+</ul>
+<h3 id="servlet缺省路径"><a href="#servlet缺省路径" class="headerlink" title="servlet缺省路径"></a>servlet缺省路径</h3><p><strong>servlet的缺省路径实在tomcat服务器内置的一个路径.该路径对应的是一个DefaultServlet(缺省sservlet).这个缺省servlet的作用是用于解析web应用的静态资源文件</strong><br><img src="/uploads/blog4.png" alt="图片"><br><img src="/uploads/blog5.png" alt="图片"><br>当在url-pattern中配置一个/index.html,同时Webcontent下面也有一个index.html文件时<br>输入<a href="http://localhost:8080/project_name/index..html" target="_blank" rel="external">http://localhost:8080/project_name/index..html</a><br>会直接访问到servlet页面.</p>
+<ol>
+<li>到当前projec_name应用下的web.xml文件中查找是否有匹配的url-pattern</li>
+<li>如果没有匹配的url-pattern,则交给tomcat的内置的DefaultServlet处理</li>
+<li>DefaultServlet程序到project_name应用的根目录下查找是否存在一个名为index.html的静态文件.</li>
+<li>如果找到该文件,则读取文件内容,找不到返回404.<br><strong>结论:先找动态资源,再找静态资源</strong></li>
+</ol>
+<h2 id="Servlet的生命周期"><a href="#Servlet的生命周期" class="headerlink" title="Servlet的生命周期"></a>Servlet的生命周期</h2><p>即Servlet类对象什么时候创建,什么时候调用什么方法,什么时候调用方法进行销毁.<br>Servlet的生命周期由tomcat服务器控制!<br>第一次访问:</p>
+<ol>
+<li>调用构造方法,servlet对象被创建. 只调用一次,这说明servlet在tomcat中是单例的.</li>
+<li>创建完servlet,对象init方法被调用.只调用一次</li>
+<li>每次发出请求时,service方法被调用<br>继续访问:<br>只调用service方法<br>重新部署或者关闭tomcat服务器:<br>destory方法被调用,销毁servlet对象.只调用一次<br><img src="/uploads/blog6.png" alt="图片"></li>
+</ol>
+<p>Servlet生命周期,在tomcat中的运行过程总结:</p>
+<ol>
+<li>通过映射找到servlet-class的内容,得到字符串<br>cn.fayostyle.servlet1.First_Servlet</li>
+<li>通过反射构造First_Servlet对象</li>
+</ol>
+<ul>
+<li>得到字节码对象<br><code>Class clazz = class.forName(&quot;cn.fayostyle.servlet1.First_Servlet&quot;);</code></li>
+<li>调用无参的构造方法来构造对象<br><code>Object obj = class.newInstance();</code> —-servlet的构造方法被调用</li>
+</ul>
+<ol>
+<li>创建ServletConfig对象,通过反射调用init()方法</li>
+</ol>
+<ul>
+<li>得到方法对象<br><code>Method m = clazz.getDaeclareMethod(&quot;init&quot;, ServletConfig.class);</code></li>
+<li>调用方法<br><code>m.invoke(obj, servletconfig);</code> —–Servlet中的init方法被调用</li>
+</ul>
+<ol>
+<li>创建request,response对象,通过反射调用service方法</li>
+</ol>
+<ul>
+<li><p>得到方法对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Method m = clazz.getDeclareMethod(&quot;service&quot;,HttpServletRequest.class,HttpServletResponse.class);</div></pre></td></tr></table></figure>
+</li>
+<li><p>调用方法<br><code>m.invoke(obj, request, response);</code> ——service方法被调用</p>
 </li>
 </ul>
-<p>将System.in传入的字节流，通过InputStreamReader转换流转换为字符流，放入缓冲区，一个程序只需要创建一个BufferedReader实例就可以多次使用buff.readLine()方法将输入读进缓冲区</p>
-<h3 id="eclipse的安装与配置"><a href="#eclipse的安装与配置" class="headerlink" title="eclipse的安装与配置"></a>eclipse的安装与配置</h3><ul>
-<li>eclipse是一个以插件为主的开发IDE，在eclipse官网下载JAVASE版本，之后自行安装JAVAEE插件即可，也可以安装其他如C/C++的插件进行开发。</li>
-<li>java web的开发，安装Myeclipse会更加利于开发，因为它已经集成了JAVAEE开发所需要的工具。<br>详情可以戳<a href="heep://" target="_blank" rel="external">windows下安装myeclipse</a></li>
+<ol>
+<li>服务器停止或者重新不熟web应用,通过反射调用destory()方法.<ul>
+<li>得到方法对象<br><code>Method m = clazz.getDeclareMethod(&quot;destory&quot;, null);</code></li>
+<li>调用方法<br><code>m.invoke(obj,null);</code> —–destory方法被调用</li>
 </ul>
-<h3 id="tomcat的安装配置"><a href="#tomcat的安装配置" class="headerlink" title="tomcat的安装配置"></a>tomcat的安装配置</h3><h3 id="Mysql的安装配置"><a href="#Mysql的安装配置" class="headerlink" title="Mysql的安装配置"></a>Mysql的安装配置</h3><p>## </p>
+</li>
+</ol>
+<h2 id="servlet对象自动加载"><a href="#servlet对象自动加载" class="headerlink" title="servlet对象自动加载"></a>servlet对象自动加载</h2><p> 在servlet配置中增加<load-on-startup>[1-6 正整数,数字越大优先级越低]</load-on-startup> 字段<br> 将会在tomcat服务器启动加载webapp的时候,提钱调用init()方法</p>
+<h2 id="有参的init方法和无参的init方法"><a href="#有参的init方法和无参的init方法" class="headerlink" title="有参的init方法和无参的init方法"></a>有参的init方法和无参的init方法</h2><h2 id="servlet对象在tomcat服务器中的运行机制-是单实例多线程"><a href="#servlet对象在tomcat服务器中的运行机制-是单实例多线程" class="headerlink" title="servlet对象在tomcat服务器中的运行机制,是单实例多线程"></a>servlet对象在tomcat服务器中的运行机制,是单实例多线程</h2><p>要注意多线程安全,解决方案:加锁 synchronized</p>
+<h2 id="ServletConfig对象-—-每个servlet只能获取属于自己的配置sml文件中的参数数据"><a href="#ServletConfig对象-—-每个servlet只能获取属于自己的配置sml文件中的参数数据" class="headerlink" title="ServletConfig对象   —-每个servlet只能获取属于自己的配置sml文件中的参数数据"></a>ServletConfig对象   —-每个servlet只能获取属于自己的配置sml文件中的参数数据</h2><p>作用:主要用于加载servlet的初始化参数<br>封装了web.xml中的数据,通过对象方法获取.<br>一个web应用里面,可以有多个ServletConfig对象,一个Servlet配置,对应一个ServletConfig对象</p>
+<h2 id="ServletContext对象"><a href="#ServletContext对象" class="headerlink" title="ServletContext对象"></a>ServletContext对象</h2><p>Servlet的上下文对象,表示一个当前的web应用环境<br>一个web应用里面,只有一个ServletContext对象<br>创建时间:加载web应用的时候,就创建了ServletContext对象.<br>得到对象:从ServletConfig对象的getServletContext方法得到<br>核心API的掌握</p>
+<ol>
+<li>java.lang.String getContextPath() —-得到web应用路径.通常用在请求重定向的资源中<br><code>response.sendRedirect(contextPath+ &quot;/index.html&quot;)</code></li>
+<li>java.lang.String getInitParameter(java.lang.String name)<br>java.util.Enumeration getInitParameterNames() —-得到web应用的初始化参数,所有servlet都可以获取.</li>
+<li>域对象有关的方法:<br>域对象:作用是用于保存数据,获取数据.可以在不同的动态资源之间共享数据.<br>保存数据: void setAttribute(java.lang.String name, java.lang.Object object)<br>获取数据: java.lang.Object getAttribute(java.lang.String name)<br>删除数据: void removeAttribute(java.lang.String name)<br>ServletContext域对象: 作用范围在整个web应用中都有效<br>HttpServletRequest域对象<br>HttpSession域对象<br>PageContext域对象<br>项目中根据每个域对象作用范围不同,选择讲数据保存到不同的域对象中.</li>
+<li>转发(跳转页面)<br>RequestDispatcher getRequestDispather(java.lang.String path)<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RequestDispather rd = thix.getServletContext().getRequestDispatcher(<span class="string">"/index.html"</span>);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>与重定向的区别在于,转发的地址栏不会变,且只能转发到当前web应用内的资源,不能转发到当前web应用以外的资源,可以再转发过程中,把数据保存到request域对象中;而重定向地址栏会改变,且可以重定向到任意地址,不能把数据保存在request域对象中.<strong>如果要使用request域对象进行数据共享,只能使用转发技术</strong></p>
 
       
     </div>
@@ -466,6 +583,8 @@ JDBC/Servlet">
           
             <a href="/tags/java-web/" rel="tag"># java web</a>
           
+            <a href="/tags/Servlet/" rel="tag"># Servlet</a>
+          
         </div>
       
 
@@ -473,8 +592,8 @@ JDBC/Servlet">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/21/在github和coding上同时部署hexo/" rel="next" title="在github和coding上同时部署hexo">
-                <i class="fa fa-chevron-left"></i> 在github和coding上同时部署hexo
+              <a href="/2016/11/24/open-vpn-搭建免流服务器/" rel="next" title="open vpn 搭建免流服务器">
+                <i class="fa fa-chevron-left"></i> open vpn 搭建免流服务器
               </a>
             
           </div>
@@ -482,10 +601,6 @@ JDBC/Servlet">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/21/windows10下安装myeclipse/" rel="prev" title="windows10下安装myeclipse">
-                windows10下安装myeclipse <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -500,10 +615,10 @@ JDBC/Servlet">
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/11/21/学习大纲/"
-     data-title="java web学习大纲"
+        <div class="ds-share flat" data-thread-key="2016/11/27/Servlet学习/"
+     data-title="Servlet学习"
      data-content=""
-     data-url="http://yoursite.com/2016/11/21/学习大纲/">
+     data-url="http://yoursite.com/2016/11/27/Servlet学习/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -673,7 +788,7 @@ var duoshuoQuery = {short_name:"fayostyle"};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java-web学习大纲"><span class="nav-number">1.</span> <span class="nav-text">java web学习大纲</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#java开发环境搭建"><span class="nav-number">1.1.</span> <span class="nav-text">java开发环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK下载和配置"><span class="nav-number">1.1.1.</span> <span class="nav-text">JDK下载和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#eclipse的安装与配置"><span class="nav-number">1.1.2.</span> <span class="nav-text">eclipse的安装与配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tomcat的安装配置"><span class="nav-number">1.1.3.</span> <span class="nav-text">tomcat的安装配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mysql的安装配置"><span class="nav-number">1.1.4.</span> <span class="nav-text">Mysql的安装配置</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#大纲"><span class="nav-number">1.</span> <span class="nav-text">大纲</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何开发一个servlet"><span class="nav-number">2.</span> <span class="nav-text">如何开发一个servlet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤"><span class="nav-number">2.1.</span> <span class="nav-text">步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet的映射路径匹配"><span class="nav-number">3.</span> <span class="nav-text">Servlet的映射路径匹配</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#精确匹配"><span class="nav-number">3.1.</span> <span class="nav-text">精确匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模糊匹配"><span class="nav-number">3.2.</span> <span class="nav-text">模糊匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#servlet缺省路径"><span class="nav-number">3.3.</span> <span class="nav-text">servlet缺省路径</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet的生命周期"><span class="nav-number">4.</span> <span class="nav-text">Servlet的生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#servlet对象自动加载"><span class="nav-number">5.</span> <span class="nav-text">servlet对象自动加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有参的init方法和无参的init方法"><span class="nav-number">6.</span> <span class="nav-text">有参的init方法和无参的init方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#servlet对象在tomcat服务器中的运行机制-是单实例多线程"><span class="nav-number">7.</span> <span class="nav-text">servlet对象在tomcat服务器中的运行机制,是单实例多线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ServletConfig对象-—-每个servlet只能获取属于自己的配置sml文件中的参数数据"><span class="nav-number">8.</span> <span class="nav-text">ServletConfig对象   —-每个servlet只能获取属于自己的配置sml文件中的参数数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ServletContext对象"><span class="nav-number">9.</span> <span class="nav-text">ServletContext对象</span></a></li></ol></div>
             
 
           </div>

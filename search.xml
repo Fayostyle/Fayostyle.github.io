@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[win10下搭建java开发环境]]></title>
+      <url>%2F2016%2F12%2F02%2Fwin10%E4%B8%8B%E6%90%AD%E5%BB%BAjava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+      <content type="text"><![CDATA[下载地址jdk和jre官方网址：http://www.oracle.com/technetwork/java/javase/downloads/index.html根据你的系统选择你需要下载的jdk，32位系统对应x86，64位系统对应x64下载完后得到一个可执行文件，点击运行进入安装 安装 安装JDK选择你要安装到的路径，注意这个路径不能包含中文名这里我们可以通过“更改”选择自己想要安装到的目录，然后点击下一步即可。到这里我们只安装了jdk，安装向导会检查到你未安装jre，然后提示你安装jre 安装JRE选择一个你喜欢的文件夹，注意这个文件夹不要是jdk安装目录，否则会覆盖掉jdk目录下的jre目录我们这里选择安装到和JDK同级的目录下，点击下一步之后即可完成安装，然后提示已成功安装 环境变量配置我的电脑→右键→属性→高级系统设置→环境变量 新建一个变量名为“JAVA_HOME”的系统变量，变量值为“E:\study\java”（jdk的安装目录，根据个人所安装的目录修改） 再新建一个变量名为“CLASSPATH”，变量值为“.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”的系统变量，注意前面的点号和分号都是有的3.打开“Path”系统变量，点击新建，添加“%JAVA_HOME%\bin”和“%JAVA_HOME%\jre\bin”两个系统变量。Path使得系统可以在任何路径下识别java命令（win7下Path打开后可能不是这样的页面，打开后需要手动输入这两个变量名，每个变量名都用英文分号隔开即可） 认证点击保存后，按window+R或者点击运行输入cmd，打开命令行窗口分别输入java和java -version和javac都正常运行即代表java已经正确安装，其中 java -version代表你安装的java的版本 如果出现类似”javac不是内部或外部命令”等提示语句，请再三检查你的环境变量是否正确配置，或者JDK和JRE安装目录是否重复，如果重复，可以选择再次运行下载的jdk安装程序重新安装。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[eclipse下tomcat服务器启动相关]]></title>
       <url>%2F2016%2F11%2F29%2Ftomcat%2F</url>
       <content type="text"><![CDATA[折腾了我好多天的问题,没想到随手一百度就解决了.. 读取配置文件位置在eclipse下新建的web项目,放在tomcat上运行,可以正常访问到项目界面,但是localhost:8080却访问不到原来这是eclipse的优化，它把Ttomcat的配置文件都COPY到自己一个隐藏的目录下了，当你用eclipse启动的时候，其实并不是启动Ttomcat下的startup,而是eclipse自己的COPY的那堆配置文件，所以，你用eclipse启动时，访问tomcat自带的主页会出404..metadata.plugins\org.eclipse.wst.server.core\tmp1这个就是ECLIPSE默认COPY配置文件存放的目录。所以因为eclipse自带tomcat只是copy了自己tomcat的配置文件，所以是访问不了tomcat主页的解决方法: 双击在Servers视图中的服务器,出现配置界面 在Server Locations一栏,默认是选中了第一个 Use workspace metadata.改为第二个就可以了.如果第二个为灰色的,可以删除这个服务器,重新部署一个,或者remove所有项目,再clear服务器,然后就可以了. 项目部署位置还有一个问题,打开tomcat的webapps目录,发现项目没有自动拷贝过来,平时学习无所谓,但如果项目需要移植发送,会很难找.metadata.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapp这就是eclipse会默认部署项目到的工作目录.修改方法:在上一步的基础上,同时修改下面的Deploy path,修改为tomcat的webapps目录即可.]]></content>

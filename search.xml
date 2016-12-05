@@ -3,9 +3,23 @@
   
     
     <entry>
+      <title><![CDATA[这四年经历不可思议如故事]]></title>
+      <url>%2F2016%2F12%2F04%2F%E8%BF%99%E5%9B%9B%E5%B9%B4%E7%BB%8F%E5%8E%86%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AE%AE%E5%A6%82%E6%95%85%E4%BA%8B%2F</url>
+      <content type="text"><![CDATA[]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[win10下安装tomcat]]></title>
+      <url>%2F2016%2F12%2F02%2Fwin10%E4%B8%8B%E5%AE%89%E8%A3%85tomcat%2F</url>
+      <content type="text"><![CDATA[下载tomcat用浏览器打开tomcat官网：http://tomcat.apache.org/在左侧的导航栏Download下方选择最新的Tomcat 9，点击页面下方的“ 64-bit Windows zip (pgp, md5, sha1)“进行下下载完成 安装tomcat解压后即可使用 配置环境变量 配置jdk的环境变量(博客中已有) 在系统变量里新建变量名：CATALINA_BASE，变量值：E:\editor\apache-tomcat-9.0.0.M13 在系统变量里新建变量名：CATALINA_HOME，变量值：E:\editor\apache-tomcat-9.0.0.M13 在系统变量里打开PATH，添加变量值：%CATALINA_HOME%\lib;%CATALINA_HOME%\bin 打开cmd，进入tomcat下的bin目录，执行“service.bat install” 附：service卸载命令：service.bat remove 启动tomcat 尝试用git bash在bin目录下输入命令，失败，还是cmd才可以。！点击bin目录下的startup.bat，或者在bin目录下面启动cmd，输入startup.bat,会出现cmd窗口显示启动信息，如果窗口闪退，则启动会失败！停止服务即是shutdown.bat在linux下，对应的启动和停止时startup.sh和shutdown.sh两个命令 测试安装是否成功使用浏览器打开http://localhost:8080/，若成功打开则表示tomcat安装且运行成功 教程马克]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[win10下搭建java开发环境]]></title>
       <url>%2F2016%2F12%2F02%2Fwin10%E4%B8%8B%E6%90%AD%E5%BB%BAjava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
-      <content type="text"><![CDATA[下载地址jdk和jre官方网址：http://www.oracle.com/technetwork/java/javase/downloads/index.html根据你的系统选择你需要下载的jdk，32位系统对应x86，64位系统对应x64下载完后得到一个可执行文件，点击运行进入安装 安装 安装JDK选择你要安装到的路径，注意这个路径不能包含中文名这里我们可以通过“更改”选择自己想要安装到的目录，然后点击下一步即可。到这里我们只安装了jdk，安装向导会检查到你未安装jre，然后提示你安装jre 安装JRE选择一个你喜欢的文件夹，注意这个文件夹不要是jdk安装目录，否则会覆盖掉jdk目录下的jre目录我们这里选择安装到和JDK同级的目录下，点击下一步之后即可完成安装，然后提示已成功安装 环境变量配置我的电脑→右键→属性→高级系统设置→环境变量 新建一个变量名为“JAVA_HOME”的系统变量，变量值为“E:\study\java”（jdk的安装目录，根据个人所安装的目录修改） 再新建一个变量名为“CLASSPATH”，变量值为“.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”的系统变量，注意前面的点号和分号都是有的3.打开“Path”系统变量，点击新建，添加“%JAVA_HOME%\bin”和“%JAVA_HOME%\jre\bin”两个系统变量。Path使得系统可以在任何路径下识别java命令（win7下Path打开后可能不是这样的页面，打开后需要手动输入这两个变量名，每个变量名都用英文分号隔开即可） 认证点击保存后，按window+R或者点击运行输入cmd，打开命令行窗口分别输入java和java -version和javac都正常运行即代表java已经正确安装，其中 java -version代表你安装的java的版本 如果出现类似”javac不是内部或外部命令”等提示语句，请再三检查你的环境变量是否正确配置，或者JDK和JRE安装目录是否重复，如果重复，可以选择再次运行下载的jdk安装程序重新安装。]]></content>
+      <content type="text"><![CDATA[下载地址jdk和jre官方网址：http://www.oracle.com/technetwork/java/javase/downloads/index.html根据你的系统选择你需要下载的jdk，32位系统对应x86，64位系统对应x64下载完后得到一个可执行文件，点击运行进入安装 安装 安装JDK选择你要安装到的路径，注意这个路径不能包含中文名这里我们可以通过“更改”选择自己想要安装到的目录，然后点击下一步即可。到这里我们只安装了jdk，安装向导会检查到你未安装jre，然后提示你安装jre 安装JRE选择一个你喜欢的文件夹，注意这个文件夹不要是jdk安装目录，否则会覆盖掉jdk目录下的jre目录我们这里选择安装到和JDK同级的目录下，点击下一步之后即可完成安装，然后提示已成功安装 环境变量配置我的电脑→右键→属性→高级系统设置→环境变量 新建一个变量名为“JAVA_HOME”的系统变量，变量值为“E:\study\java”（jdk的安装目录，根据个人所安装的目录修改） 再新建一个变量名为“CLASSPATH”，变量值为“.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”的系统变量，注意前面的点号和分号都是有的3.打开“Path”系统变量，点击新建，添加“%JAVA_HOME%\bin”和“%JAVA_HOME%\jre\bin”两个系统变量。Path使得系统可以在任何路径下识别java命令（win7下Path打开后可能不是这样的页面，打开后需要手动输入这两个变量名，每个变量名都用英文分号隔开即可） 认证点击保存后，按window+R或者点击运行输入cmd，打开命令行窗口分别输入java和java -version和javac都正常运行即代表java已经正确安装，其中 java -version代表你安装的java的版本 如果出现类似”javac不是内部或外部命令”等提示语句，请再三检查你的环境变量是否正确配置，或者JDK和JRE安装目录是否重复，如果重复，可以选择再次运行下载的jdk安装程序重新安装。教程马克]]></content>
     </entry>
 
     

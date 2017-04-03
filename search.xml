@@ -2,6 +2,69 @@
 <search>
   
     
+    <entry>
+      <title><![CDATA[珍惜时间 好好学习]]></title>
+      <url>%2F2017%2F04%2F03%2F%E7%8F%8D%E6%83%9C%E6%97%B6%E9%97%B4-%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%2F</url>
+      <content type="text"><![CDATA[兄弟，最近状态欠佳啊，找实习的紧急日子，好像错过了不少东西呢。有个坏消息，好像hexo又崩了]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[2016的年度总结]]></title>
+      <url>%2F2016%2F12%2F31%2F2016%E7%9A%84%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%2F</url>
+      <content type="text"><![CDATA[大二上学期，我加入了微客工作室，从php入门，接触到web后端开发。这一年，心里的目标一直很坚定，偶尔会动摇，但想到没有更好的路可以选择，对于互联网巨头公司的追求就更加强烈。一年时间，其实还是学了蛮多的东西，都在涉猎，遗憾的是没有深入去学习，没有实际的项目可以拿得出手。人家说一年时间，怎样怎样了，我就感觉好叼，一年原来就可以进步这么大。不过想想自己，一年时间，不也从什么都不懂的菜鸟，变成了对互联网疯狂热爱的菜鸟。 php 学了基本语法和web端的编程（快忘光了），没有接触到框架，在学习的过程中，不会搭建环境（现在想想蛮简单）就选择了集成的wamp，接触到了服务器apache的配置数据库mysql和SQL语言。整整磨叽了大二整个上学期，才算入了门，大二下学期到学校，写了自己第一个博客，前端代码是现成的，后台是自己一行一行敲出来的。 python 大二结束，在php的道路上走出去了一点点，我也不知道为什么会学习得那么慢。感觉自己好像已经什么都会了，又感觉自己其实什么都不会。总之，好像真的不喜欢这个。刚好遇到轩哥介绍，加入一个团队去做python web，学习python的同时，又入了Linux的坑，装双系统真是熬了我几天几夜。好多东西弄完就会忘记，因为遇到的问题不是那么常见，又很繁琐，所以写博客记录是很必要的。我也是有点懒。 java 学校开了java课，作为一个牛逼后台开发，怎么能不会java呢，python的项目最终还是夭折了，那就入java吧！有了前面的踩坑，这个学起来还是很快的。开始有了编程思想，看得懂报错，调bug有了经验和逻辑条理。 我最大的缺点，应该就是不够坚持，想得太多却没有踏实去做，大一那次选拔提前放弃导致后面的连锁反应，还有后面学习中遇到困难卡壳就会好多天不去解决，还有大方向上的失策，不坚持去好好学习一个东西，因为学到了瓶颈处？或许性格就是这样啊，劳资就是不在意这些，我自己认为那是对的就好！php就是垃圾，我就是不喜欢这种语音，所以选择python和java。想想这一切，也不是那么糟糕。这个社会人傻钱多的人也有那么多，要立足还是不难的。年少的梦想越来越远，但也不是没有机会。下学期来就是找实习了，但是在这之前，还有很多东西要做。加油了。珍惜时间，认真学习。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[win10下安装tomcat]]></title>
+      <url>%2F2016%2F12%2F02%2Fwin10%E4%B8%8B%E5%AE%89%E8%A3%85tomcat%2F</url>
+      <content type="text"><![CDATA[下载tomcat用浏览器打开tomcat官网：http://tomcat.apache.org/在左侧的导航栏Download下方选择最新的Tomcat 9，点击页面下方的“ 64-bit Windows zip (pgp, md5, sha1)“进行下下载完成 安装tomcat解压后即可使用 配置环境变量 配置jdk的环境变量(博客中已有) 在系统变量里新建变量名：CATALINA_BASE，变量值：E:\editor\apache-tomcat-9.0.0.M13 在系统变量里新建变量名：CATALINA_HOME，变量值：E:\editor\apache-tomcat-9.0.0.M13 在系统变量里打开PATH，添加变量值：%CATALINA_HOME%\lib;%CATALINA_HOME%\bin 打开cmd，进入tomcat下的bin目录，执行“service.bat install” 附：service卸载命令：service.bat remove 启动tomcat 尝试用git bash在bin目录下输入命令，失败，还是cmd才可以。！点击bin目录下的startup.bat，或者在bin目录下面启动cmd，输入startup.bat,会出现cmd窗口显示启动信息，如果窗口闪退，则启动会失败！停止服务即是shutdown.bat在linux下，对应的启动和停止时startup.sh和shutdown.sh两个命令 测试安装是否成功使用浏览器打开http://localhost:8080/，若成功打开则表示tomcat安装且运行成功 教程马克]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[win10下搭建java开发环境]]></title>
+      <url>%2F2016%2F12%2F02%2Fwin10%E4%B8%8B%E6%90%AD%E5%BB%BAjava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+      <content type="text"><![CDATA[下载地址jdk和jre官方网址：http://www.oracle.com/technetwork/java/javase/downloads/index.html根据你的系统选择你需要下载的jdk，32位系统对应x86，64位系统对应x64下载完后得到一个可执行文件，点击运行进入安装 安装 安装JDK选择你要安装到的路径，注意这个路径不能包含中文名这里我们可以通过“更改”选择自己想要安装到的目录，然后点击下一步即可。到这里我们只安装了jdk，安装向导会检查到你未安装jre，然后提示你安装jre 安装JRE选择一个你喜欢的文件夹，注意这个文件夹不要是jdk安装目录，否则会覆盖掉jdk目录下的jre目录我们这里选择安装到和JDK同级的目录下，点击下一步之后即可完成安装，然后提示已成功安装 环境变量配置我的电脑→右键→属性→高级系统设置→环境变量 新建一个变量名为“JAVA_HOME”的系统变量，变量值为“E:\study\java”（jdk的安装目录，根据个人所安装的目录修改） 再新建一个变量名为“CLASSPATH”，变量值为“.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”的系统变量，注意前面的点号和分号都是有的3.打开“Path”系统变量，点击新建，添加“%JAVA_HOME%\bin”和“%JAVA_HOME%\jre\bin”两个系统变量。Path使得系统可以在任何路径下识别java命令（win7下Path打开后可能不是这样的页面，打开后需要手动输入这两个变量名，每个变量名都用英文分号隔开即可） 认证点击保存后，按window+R或者点击运行输入cmd，打开命令行窗口分别输入java和java -version和javac都正常运行即代表java已经正确安装，其中 java -version代表你安装的java的版本 如果出现类似”javac不是内部或外部命令”等提示语句，请再三检查你的环境变量是否正确配置，或者JDK和JRE安装目录是否重复，如果重复，可以选择再次运行下载的jdk安装程序重新安装。教程马克]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[eclipse下tomcat服务器启动相关]]></title>
+      <url>%2F2016%2F11%2F29%2Ftomcat%2F</url>
+      <content type="text"><![CDATA[折腾了我好多天的问题,没想到随手一百度就解决了.. 读取配置文件位置在eclipse下新建的web项目,放在tomcat上运行,可以正常访问到项目界面,但是localhost:8080却访问不到原来这是eclipse的优化，它把Ttomcat的配置文件都COPY到自己一个隐藏的目录下了，当你用eclipse启动的时候，其实并不是启动Ttomcat下的startup,而是eclipse自己的COPY的那堆配置文件，所以，你用eclipse启动时，访问tomcat自带的主页会出404..metadata.plugins\org.eclipse.wst.server.core\tmp1这个就是ECLIPSE默认COPY配置文件存放的目录。所以因为eclipse自带tomcat只是copy了自己tomcat的配置文件，所以是访问不了tomcat主页的解决方法: 双击在Servers视图中的服务器,出现配置界面 在Server Locations一栏,默认是选中了第一个 Use workspace metadata.改为第二个就可以了.如果第二个为灰色的,可以删除这个服务器,重新部署一个,或者remove所有项目,再clear服务器,然后就可以了. 项目部署位置还有一个问题,打开tomcat的webapps目录,发现项目没有自动拷贝过来,平时学习无所谓,但如果项目需要移植发送,会很难找.metadata.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapp这就是eclipse会默认部署项目到的工作目录.修改方法:在上一步的基础上,同时修改下面的Deploy path,修改为tomcat的webapps目录即可.]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Servlet学习]]></title>
+      <url>%2F2016%2F11%2F27%2FServlet%E5%AD%A6%E4%B9%A0%2F</url>
+      <content type="text"><![CDATA[#Servlet学习: 大纲 servlet的相关概念和接口 servlet的执行过程 servlet路径映射 缺省servlet servlet生命周期(重点) servlet自动加载 servlet线程安全 ServletConfig对象 servlet接口详解 ServletContext对象 如何开发一个servlet步骤 编写java类,继承HttpServlet类 123456789101112131415161718package cn.fayostyle.servlet1;import java.io.IOException;import javax.servlet.ServletException;import javax.servlet.http.HttpServlet;import javax.servlet.http.HttpServletRequest;import javax.servlet.http.HttpServletResponse;import sun.java2d.pipe.RenderQueue;public class First_Servlet extends HttpServlet &#123; @Override protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123; resp.getWriter().write("This is the first Servlet!"); &#125;&#125; 重写doGet和doPost方法 Servlet程序交给tomcat服务器运行 Servlet程序的class字节码文件拷贝到WEB-INF/classes目录 在web.xml文件中进行12345678 &lt;servlet&gt; &lt;servlet-name&gt;First_Servlet&lt;/servlet-name&gt; &lt;servlet-class&gt;cn.fayostyle.servlet1.First_Servlet&lt;/servlet-class&gt;&lt;/servlet&gt;&lt;servlet-mapping&gt; &lt;servlet-name&gt;First_Servlet&lt;/servlet-name&gt; &lt;url-pattern&gt;/first&lt;/url-pattern&gt; 在将Servlet部署到tomcat服务器中出现这个问题1、这个是因为server中已经存在了一个 把server视图打开删除以前那个就可以了2、在运行时删除以前的服务器,选中新建一个服务器就行了出现问题,将项目部署到了tomcat进行访问,却出现404,在eclipse上启动后,甚至连tomcat首页localhost:8080都访问不到. 一开始以为是自己的问题,没想到过了一天年后,重新开机打开eclipse运行又可以了….但是为何打开tomcat文件夹webapp目录,没有这个项目,也就是说没被拷贝过去.?通过反射: 构造FirstServlet对象 调用FirstServlet里面的方法 Servlet的映射路径匹配123456789&lt;servlet&gt; &lt;servlet-name&gt;First_Servlet&lt;/servlet-name&gt; &lt;servlet-class&gt;cn.fayostyle.servlet1.First_Servlet&lt;/servlet-class&gt;&lt;/servlet&gt;&lt;servlet-mapping&gt; &lt;servlet-name&gt;First_Servlet&lt;/servlet-name&gt; &lt;url-pattern&gt;/first&lt;/url-pattern&gt;&lt;/servlet-mapping&gt; 精确匹配/first只能匹配http://localhost:8080/project_name/first /test/first只能匹配http://localhost:8080/project_name/test/first 模糊匹配 / 号为通配符,匹配任意路径,甚至为空也可以http://localhost:8080/project_name/*/test/ 匹配http://localhost:8080/project_name/test/ *.后缀名 *.do *.action *.html(伪静态:实际是一个Servlet) url-pattern要么以/开头,要么以*开头 不能同时使用两种模糊匹配如:/test/*.do 当输入的URL有多个servlet同时别匹配的情况下 精确匹配优先 以后缀名结尾的模糊匹配优先级最低 servlet缺省路径servlet的缺省路径实在tomcat服务器内置的一个路径.该路径对应的是一个DefaultServlet(缺省sservlet).这个缺省servlet的作用是用于解析web应用的静态资源文件当在url-pattern中配置一个/index.html,同时Webcontent下面也有一个index.html文件时输入http://localhost:8080/project_name/index..html会直接访问到servlet页面. 到当前projec_name应用下的web.xml文件中查找是否有匹配的url-pattern 如果没有匹配的url-pattern,则交给tomcat的内置的DefaultServlet处理 DefaultServlet程序到project_name应用的根目录下查找是否存在一个名为index.html的静态文件. 如果找到该文件,则读取文件内容,找不到返回404.结论:先找动态资源,再找静态资源 Servlet的生命周期即Servlet类对象什么时候创建,什么时候调用什么方法,什么时候调用方法进行销毁.Servlet的生命周期由tomcat服务器控制!第一次访问: 调用构造方法,servlet对象被创建. 只调用一次,这说明servlet在tomcat中是单例的. 创建完servlet,对象init方法被调用.只调用一次 每次发出请求时,service方法被调用继续访问:只调用service方法重新部署或者关闭tomcat服务器:destory方法被调用,销毁servlet对象.只调用一次 Servlet生命周期,在tomcat中的运行过程总结: 通过映射找到servlet-class的内容,得到字符串cn.fayostyle.servlet1.First_Servlet 通过反射构造First_Servlet对象 得到字节码对象Class clazz = class.forName(&quot;cn.fayostyle.servlet1.First_Servlet&quot;); 调用无参的构造方法来构造对象Object obj = class.newInstance(); —-servlet的构造方法被调用 创建ServletConfig对象,通过反射调用init()方法 得到方法对象Method m = clazz.getDaeclareMethod(&quot;init&quot;, ServletConfig.class); 调用方法m.invoke(obj, servletconfig); —–Servlet中的init方法被调用 创建request,response对象,通过反射调用service方法 得到方法对象 1Method m = clazz.getDeclareMethod(&quot;service&quot;,HttpServletRequest.class,HttpServletResponse.class); 调用方法m.invoke(obj, request, response); ——service方法被调用 服务器停止或者重新不熟web应用,通过反射调用destory()方法. 得到方法对象Method m = clazz.getDeclareMethod(&quot;destory&quot;, null); 调用方法m.invoke(obj,null); —–destory方法被调用 servlet对象自动加载 在servlet配置中增加[1-6 正整数,数字越大优先级越低] 字段 将会在tomcat服务器启动加载webapp的时候,提钱调用init()方法 有参的init方法和无参的init方法servlet对象在tomcat服务器中的运行机制,是单实例多线程要注意多线程安全,解决方案:加锁 synchronized ServletConfig对象 —-每个servlet只能获取属于自己的配置sml文件中的参数数据作用:主要用于加载servlet的初始化参数封装了web.xml中的数据,通过对象方法获取.一个web应用里面,可以有多个ServletConfig对象,一个Servlet配置,对应一个ServletConfig对象 ServletContext对象Servlet的上下文对象,表示一个当前的web应用环境一个web应用里面,只有一个ServletContext对象创建时间:加载web应用的时候,就创建了ServletContext对象.得到对象:从ServletConfig对象的getServletContext方法得到核心API的掌握 java.lang.String getContextPath() —-得到web应用路径.通常用在请求重定向的资源中response.sendRedirect(contextPath+ &quot;/index.html&quot;) java.lang.String getInitParameter(java.lang.String name)java.util.Enumeration getInitParameterNames() —-得到web应用的初始化参数,所有servlet都可以获取. 域对象有关的方法:域对象:作用是用于保存数据,获取数据.可以在不同的动态资源之间共享数据.保存数据: void setAttribute(java.lang.String name, java.lang.Object object)获取数据: java.lang.Object getAttribute(java.lang.String name)删除数据: void removeAttribute(java.lang.String name)ServletContext域对象: 作用范围在整个web应用中都有效HttpServletRequest域对象HttpSession域对象PageContext域对象项目中根据每个域对象作用范围不同,选择讲数据保存到不同的域对象中. 转发(跳转页面)RequestDispatcher getRequestDispather(java.lang.String path)1RequestDispather rd = thix.getServletContext().getRequestDispatcher("/index.html"); 与重定向的区别在于,转发的地址栏不会变,且只能转发到当前web应用内的资源,不能转发到当前web应用以外的资源,可以再转发过程中,把数据保存到request域对象中;而重定向地址栏会改变,且可以重定向到任意地址,不能把数据保存在request域对象中.如果要使用request域对象进行数据共享,只能使用转发技术]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[open vpn 搭建免流服务器]]></title>
+      <url>%2F2016%2F11%2F24%2Fopen-vpn-%E6%90%AD%E5%BB%BA%E5%85%8D%E6%B5%81%E6%9C%8D%E5%8A%A1%E5%99%A8%2F</url>
+      <content type="text"><![CDATA[准备工作 云服务器一台，我这里刚好使用腾讯的学生一元云服务器。重装操作系统，选择CentOS6.6 64位 Xshell软件 开始 首先使用Xshell软件连接到远程的服务器接下来填入用户名,密码(登录远端服务器的用户名和密码) 按照骚逼汪的教程,在terminal中输入wget http://sbwml.cn/vpn6;chmod +x vpn6;./vpn6中间需要用到授权码,就在网页上.这是常规VPS安装脚本, 接下来等待安装即可.中途会需要设置openvpn的连接账号和密码.即是到时候手机端连接的账号密码 安装完成后,复制返回的下载链接,在浏览器中打开下载到本地解压后打开,我们需要的文件是这个,需要在手机端的openvpn配置这个文件 手机上安装openvpn,导入OpenVPN配置文件,输入账号密码就可以连接了 至此结束在前面只建立了一个手机端的用户, 可以建立多个用户.在terminal中输入 echo 账号 密码 &gt;&gt;/passwd 即可新建一个用户 &gt;&gt;是在后面追加, &gt;是覆盖!注意不要弄错了]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[windows10下安装myeclipse]]></title>
+      <url>%2F2016%2F11%2F21%2Fwindows10%E4%B8%8B%E5%AE%89%E8%A3%85myeclipse%2F</url>
+      <content type="text"><![CDATA[##下载myeclipse MyEclipse企业级工作平台（MyEclipse Enterprise Workbench ，简称MyEclipse）是对EclipseIDE的扩展，利用它我们可以在数据库和JavaEE的开发、发布以及应用程序服务器的整合方面极大的提高工作效率。它是功能丰富的JavaEE集成开发环境，包括了完备的编码、调试、测试和发布功能，完整支持HTML,Struts,JSP,CSS,Javascript,Spring,SQL,Hibernate。 MyEclipse 是一个十分优秀的用于开发Java, J2EE的 Eclipse 插件集合，MyEclipse的功能非常强大，支持也十分广泛，尤其是对各种开源产品的支持十分不错。MyEclipse目前支持Java Servlet,AJAX, JSP, JSF, Struts,Spring, Hibernate,EJB3,JDBC数据库链接工具等多项功能。可以说MyEclipse几乎囊括了目前所有主流开源产品的专属eclipse开发工具。 在结构上，MyEclipse的特征可以被分为7类： 1． JavaEE模型 2． WEB开发工具 3． EJB开发工具 4． 应用程序服务器的连接器 5． JavaEE项目部署服务 6． 数据库服务 7． MyEclipse整合帮助 对于以上每一种功能上的类别，在Eclipse中都有相应的功能部件，并通过一系列的插件来实现它们。MyEclipse结构上的这种模块化，可以让我们在不影响其他模块的情况下，对任一模块进行单独的扩展和升级。 简单而言，MyEclipse是Eclipse的插件，也是一款功能强大的JavaEE集成开发环境，支持代码编写、配置、测试以及除错，MyEclipse6.0以前版本需先安装Eclipse。MyEclipse6.0以后版本安装时不需安装Eclipse。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[java web学习大纲]]></title>
+      <url>%2F2016%2F11%2F21%2F%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2%2F</url>
+      <content type="text"><![CDATA[java web学习大纲 花两个小时好好写写这篇文章，有个明确的学习路线 java开发环境搭建 java基础知识 JDBC/Servlet 数据库开发技术 EJB技术和企业级应用服务器的使用（如 WebSphere、Weblogic、Sun Applcation Server或JBOSS等，目前Sun Applcation Server 9.X和JBOSS) 主流框架 springMVC + ibatis + jQuery + Ajax java并发编程，一些中间件，如分布式缓存，RMS java开发环境搭建JDK下载和配置 windows下JDK的下载安装很简单，百度一下oracle官网下载地址，如果oracle下载太慢，也可以选择国内其他下载站，之后一路next就行了。 ubuntu系统下1sudo apt install java windows下，安装jdk需要配置环境变量，具体百度。ubuntu下可以不用配置，但最好还是配置，之后安装tomcat需要用到JAVA_HOME环境变量，eclipse不需要。 初学的话，不用IDE的确是很好的，一行一行敲下来会遇到很多问题，解决下来会对基本的语法和javaAPI的使用更为得心应手。比如：12BufferedReader buff = new BufferedReader(new InputStreamReader(System.in)); 将System.in传入的字节流，通过InputStreamReader转换流转换为字符流，放入缓冲区，一个程序只需要创建一个BufferedReader实例就可以多次使用buff.readLine()方法将输入读进缓冲区 eclipse的安装与配置 eclipse是一个以插件为主的开发IDE，在eclipse官网下载JAVASE版本，之后自行安装JAVAEE插件即可，也可以安装其他如C/C++的插件进行开发。 java web的开发，安装Myeclipse会更加利于开发，因为它已经集成了JAVAEE开发所需要的工具。详情可以戳windows下安装myeclipse tomcat的安装配置Mysql的安装配置##]]></content>
+    </entry>
+
+    
   
   
 </search>

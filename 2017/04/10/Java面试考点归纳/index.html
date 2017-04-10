@@ -117,7 +117,7 @@ Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文�
 
 Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文件被编译成能被Java虚拟机执行的字节码文件。Java被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java虚拟机让这个变为可能，因为它知道底层硬件平">
 <meta property="og:image" content="http://uploadfiles.nowcoder.com/images/20151217/149974_1450349079825_4697A22AC611680A692472687DEC1CFD">
-<meta property="og:updated_time" content="2017-04-10T11:01:20.239Z">
+<meta property="og:updated_time" content="2017-04-10T12:47:07.798Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="@Java面试考点归纳">
 <meta name="twitter:description" content="整理自牛客网2017Java春招备战计划①Java面试常考题
@@ -899,6 +899,139 @@ Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文�
 </blockquote>
 </li>
 <li><p>GenericServlet和HttpServlet有什么区别？</p>
+<blockquote>
+<p>GenericServlet是一个通用的协议无关的Servlet，它实现了Servlet和ServletConfig接口。继承自GenericServlet的Servlet应该要覆盖service()方法。最后，为了开发一个能用在网页上服务于使用HTTP协议请求的Servlet，你的Servlet必须要继承自HttpServlet.<br>GenericServlet类实现了Servlet和ServletConfig接口。实现了除了service()之外的其他方法，在创建Servlet对象时，可以继承GenericServlet类来简化程序的代码，但需要实现service()方法。HeepServlet类继承了GeneriServlet类，为实际开发中大多数用Servlet处理 HTTP请求的应用灵活的方法。</p>
+</blockquote>
+</li>
+<li><p>解释下Servlet的生命周期。</p>
+<blockquote>
+<p>对每一个客户端的请求，Servlet引擎载入Servlet，调用它的init()方法，完成Servlet的初始化。然后，Servlet对象通过为每一个请求单独调用service()方法来处理所有随后来自客户端的请求，最后，调用Servlet的destroy()方法把Servlet删除掉。<br>Servlet程序是由WEB服务器调用，web服务器收到客户端的Servlet访问请求后：<br>①Web服务器首先检查是否已经装载并创建了该Servlet的实例对象。如果是，则直接执行第④步，否则，执行第②步。<br>②装载并创建该Servlet的一个实例对象。<br>③调用Servlet实例对象的init()方法。<br>④创建一个用于封装HTTP请求消息的HttpServletRequest对象和一个代表HTTP响应消息的HttpServletResponse对象，然后调用Servlet的service()方法并将请求和响应对象作为参数传递进去。<br>⑤WEB应用程序被停止或重新启动之前，Servlet引擎将卸载Servlet，并在卸载之前调用Servlet的destroy()方法。</p>
+</blockquote>
+</li>
+<li><p>doGet()方法和doPost()方法有什么区别？</p>
+<blockquote>
+<p>doGet：GET方法会把名值对追加在请求的URL后面。因为URL对字符数目有限制，进而限制了用在客户端请求的参数值的数目。并且请求中的参数值是可见的，因此，敏感信息不能用这种方式传递。<br>doPOST：POST方法通过把请求参数值放在请求体中来克服GET方法的限制，因此，可以发送的参数的数目是没有限制的。最后，通过POST请求传递的敏感信息对外部客户端是不可见的。</p>
+</blockquote>
+</li>
+<li><p>什么是Web应用程序？</p>
+<blockquote>
+<p>Web应用程序是对Web或者是应用服务器的动态扩展。有两种类型的Web应用：面向表现的和面向服务的。面向表现的Web应用程序会产生包含了很多种标记语言和动态内容的交互的web页面作为对请求的响应。而面向服务的Web应用实现了Web服务的端点(endpoint)。一般来说，一个Web应用可以看成是一组安装在服务器URL名称空间的特定子集下面的Servlet的集合。<br>Web应用程序是一种可以通过Web访问的应用程序。Web应用程序的一个最大好处是用户很容易访问应用程序。用户只需要有浏览器即可，不需要再安装其他软件。一个Web应用程序是由完成特定任务的各种Web组件（web components)构成的并通过Web将服务展示给外界。在实际应用中，Web应用程序是由多个Servlet、JSP页面、HTML文件以及图像文件等组成。所有这些组件相互协调为用户提供一组完整的服务。</p>
+</blockquote>
+</li>
+<li><p>什么是服务端包含(Server Side Include)？</p>
+<blockquote>
+<p>服务端包含(SSI)是一种简单的解释型服务端脚本语言，大多数时候仅用在Web上，用servlet标签嵌入进来。SSI最常用的场景把一个或多个文件包含到Web服务器的一个Web页面中。当浏览器访问Web页面的时候，Web服务器会用对应的servlet产生的文本来替换Web页面中的servlet标签。</p>
+</blockquote>
+</li>
+<li><p>什么是Servlet链(Servlet Chaining)？</p>
+<blockquote>
+<p>Servlet链是把一个Servlet的输出发送给另一个Servlet的方法。第二个Servlet的输出可以发送给第三个Servlet，依次类推。链条上最后一个Servlet负责把响应发送给客户端。</p>
+</blockquote>
+</li>
+<li><p>如何知道是哪一个客户端的机器正在请求你的Servlet？</p>
+<blockquote>
+<p>ServletRequest类可以找出客户端机器的IP地址或者是主机名。getRemoteAddr()方法获取客户端主机的IP地址，getRemoteHost()可以获取主机名。</p>
+</blockquote>
+</li>
+<li><p>HTTP响应的结构是怎么样的？</p>
+<blockquote>
+<p>HTTP响应由三个部分组成：<br>状态码(Status Code)：描述了响应的状态。可以用来检查是否成功的完成了请求。请求失败的情况下，状态码可用来找出失败的原因。如果Servlet没有返回状态码，默认会返回成功的状态码HttpServletResponse.SC_OK。<br>HTTP头部(HTTP Header)：它们包含了更多关于响应的信息。比如：头部可以指定认为响应过期的过期日期，或者是指定用来给用户安全的传输实体内容的编码格式。<br>主体(Body)：它包含了响应的内容。它可以包含HTML代码，图片，等等。主体是由传输在HTTP消息中紧跟在头部后面的数据字节组成的。</p>
+</blockquote>
+</li>
+<li><p>什么是cookie？session和cookie有什么区别？</p>
+<blockquote>
+<p>cookie是Web服务器发送给浏览器的一块信息。浏览器会在本地文件中给每一个Web服务器存储cookie。以后浏览器在给特定的Web服务器发请求的时候，同时会发送所有为该服务器存储的cookie。<br>下面列出了session和cookie的区别：<br>无论客户端浏览器做怎么样的设置，session都应该能正常工作。客户端可以选择禁用cookie，但是，session仍然是能够工作的，因为客户端无法禁用服务端的session。<br>在存储的数据量方面session和cookies也是不一样的。session能够存储任意的Java对象，cookie只能存储String类型的对象。<br>cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户的状态，就使用response向客户端浏览器颁发一个cookie。客户端浏览器会把cookie保存起来。当浏览器再次请求该网站时，浏览器就会把请求地址和cookie一同给服务器。服务器检查该cookie，从而判断用户的状态。服务器还可以根据需要修改cookie的内容。<br>session是另一种记录客户状态的机制。不同的是cookie保存在客户端浏览器中，而session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上，这就是session。客户端浏览器再次访问时只需要从该session中查找该客户的状态就可以了。<br>如果说cookie机制是通过检查客户身上的“通信证”，那么session机制就是通过检查服务器上的“客户明细表”来确认客户身份。</p>
+</blockquote>
+</li>
+<li><p>浏览器和Servlet通信使用的是什么协议？</p>
+<blockquote>
+<p>浏览器和Servlet通信使用的是HTTP协议。</p>
+</blockquote>
+</li>
+<li><p>什么是HTTP隧道？</p>
+<blockquote>
+<p>HTTP隧道是一种利用HTTP或者是HTTPS把多种网络协议封装起来进行通信的技术。因此，HTTP协议扮演了一个打通用于通信的网络协议的管道的包装器的角色。把其他协议的请求掩盖成HTTP的请求就是HTTP隧道。</p>
+</blockquote>
+</li>
+<li><p>sendRedirect()和forward()方法有什么区别？</p>
+<blockquote>
+<p>sendRedirect()方法会创建一个新的请求，而forward()方法只是把请求转发到一个新的目标上。重定向(redirect)以后，之前请求作用域范围以内的对象就失效了，因为会产生一个新的请求，而转发(forwarding)以后，之前请求作用域范围以内的对象还是能访问的。一般认为sendRedirect()比forward()要慢。保存在request域中的数据，只能通过转发技术，才能在其他Servlet界面获取到数据。</p>
+</blockquote>
+</li>
+<li><p>什么是URL编码和URL解码？</p>
+<blockquote>
+<p>URL编码是负责把URL里面的空格和其他的特殊字符替换成对应的十六进制表示，反之就是解码。</p>
+</blockquote>
+</li>
+<li><p>什么是JSP页面？</p>
+<blockquote>
+<p>JSP页面是一种包含了静态数据和JSP元素两种类型的文本的文本文档。静态数据可以用任何基于文本的格式来表示，比如：HTML或者XML。JSP是一种混合了静态内容和动态产生的内容的技术。</p>
+</blockquote>
+</li>
+<li><p>JSP请求是如何被处理的？</p>
+<blockquote>
+<p>浏览器首先要请求一个以.jsp扩展名结尾的页面，发起JSP请求，然后，Web服务器读取这个请求，使用JSP编译器把JSP页面转化成一个Servlet类。需要注意的是，只有当第一次请求页面或者是JSP文件发生改变的时候JSP文件才会被编译，然后服务器调用servlet类，处理浏览器的请求。一旦请求执行结束，servlet会把响应发送给客户端。<br>客户端通过浏览器发送jsp请求，服务器端接受到请求后，判断是否是第一次请求该页面，或者该页面是否改变，若是，服务器将jsp页面翻译为servlet，jvm将servlet编译为.class文件，字节码文件加载到服务器内存上执行，服务器将处理结果以.html页面的形式返回给客户端，若该页面不是第一次请求，则省略翻译和编译的步骤，直接执行。</p>
+</blockquote>
+</li>
+<li><p>JSP有什么优点？</p>
+<blockquote>
+<p>下面列出了使用JSP的优点：<br>JSP页面是被动态编译成Servlet的，因此，开发者可以很容易的更新展现代码。<br>JSP页面可以被预编译。<br>JSP页面可以很容易的和静态模板结合，包括：HTML或者XML，也可以很容易的和产生动态内容的代码结合起来。<br>开发者可以提供让页面设计者以类XML格式来访问的自定义的JSP标签库。<br>开发者可以在组件层做逻辑上的改变，而不需要编辑单独使用了应用层逻辑的页面。</p>
+</blockquote>
+</li>
+<li><p>什么是JSP指令(Directive)？JSP中有哪些不同类型的指令？</p>
+<blockquote>
+<p>Directive是当JSP页面被编译成Servlet的时候，JSP引擎要处理的指令。Directive用来设置页面级别的指令，从外部文件插入数据，指定自定义的标签库。Directive是定义在 &lt;%@ 和 %&gt;之间的。下面列出了不同类型的Directive：<br>包含指令(Include directive)：用来包含文件和合并文件内容到当前的页面。<br>页面指令(Page directive)：用来定义JSP页面中特定的属性，比如错误页面和缓冲区。<br>Taglib指令： 用来声明页面中使用的自定义的标签库。</p>
+</blockquote>
+</li>
+<li><p>什么是JSP动作(JSP action)？</p>
+<blockquote>
+<p>JSP动作以XML语法的结构来控制Servlet引擎的行为。当JSP页面被请求的时候，JSP动作会被执行。它们可以被动态的插入到文件中，重用JavaBean组件，转发用户到其他的页面，或者是给Java插件产生HTML代码。下面列出了可用的动作：<br>jsp:include-当JSP页面被请求的时候包含一个文件。<br>jsp:useBean-找出或者是初始化Javabean。<br>jsp:setProperty-设置JavaBean的属性。<br>jsp:getProperty-获取JavaBean的属性。<br>jsp:forward-把请求转发到新的页面。<br>jsp:plugin-产生特定浏览器的代码。</p>
+</blockquote>
+</li>
+<li><p>什么是Scriptlets？</p>
+<blockquote>
+<p>JSP技术中，scriptlet是嵌入在JSP页面中的一段Java代码。scriptlet是位于标签内部的所有的东西，在标签与标签之间，用户可以添加任意有效的scriplet。</p>
+</blockquote>
+</li>
+<li><p>声明(Decalaration)在哪里？</p>
+<blockquote>
+<p>声明跟Java中的变量声明很相似，它用来声明随后要被表达式或者scriptlet使用的变量。添加的声明必须要用开始和结束标签包起来。</p>
+</blockquote>
+</li>
+<li><p>什么是表达式(Expression)？</p>
+<blockquote>
+<p>JSP表达式是Web服务器把脚本语言表达式的值转化成一个String对象，插入到返回给客户端的数据流中。表达式是在&lt;%=和%&gt;这两个标签之间定义的。</p>
+</blockquote>
+</li>
+<li><p>隐含对象是什么意思？有哪些隐含对象？</p>
+<blockquote>
+<p>JSP隐含对象是页面中的一些Java对象，JSP容器让这些Java对象可以为开发者所使用。开发者不用明确的声明就可以直接使用他们。JSP隐含对象也叫做预定义变量。下面列出了JSP页面中的隐含对象：<br>application<br>page<br>request<br>response<br>session<br>exception<br>out<br>config<br>pageContext</p>
+</blockquote>
+</li>
+<li><p>面向对象软件开发的优点有哪些？</p>
+<blockquote>
+<p>代码开发模块化，更易维护和修改。<br>代码复用。<br>增强代码的可靠性和灵活性。<br>增加代码的可理解性。<br>面向对象编程有很多重要的特性，比如：封装，继承，多态和抽象。</p>
+</blockquote>
+</li>
+<li><p>封装的定义和好处有哪些？</p>
+<blockquote>
+<p>封装给对象提供了隐藏内部特性和行为的能力。对象提供一些能被其他对象访问的方法来改变它内部的数据。在Java当中，有3种修饰符：public，private和protected。每一种修饰符给其他的位于同一个包或者不同包下面对象赋予了不同的访问权限。<br>下面列出了使用封装的一些好处：<br>通过隐藏对象的属性来保护对象内部的状态。<br>提高了代码的可用性和可维护性，因为对象的行为可以被单独的改变或者是扩展。<br>禁止对象之间的不良交互提高模块化。</p>
+</blockquote>
+</li>
+<li><p>多态的定义？</p>
+<blockquote>
+<p>多态是编程语言给不同的底层数据类型做相同的接口展示的一种能力。一个多态类型上的操作可以应用到其他类型的值上面。</p>
+</blockquote>
+</li>
+<li><p>继承的定义？</p>
+<blockquote>
+<p>继承给对象提供了从基类获取字段和方法的能力。继承提供了代码的重用性，也可以在不修改类的情况下给现存的类添加新特性。</p>
+</blockquote>
+</li>
+<li><p>抽象的定义？抽象和封装的不同点？</p>
+<blockquote>
+<p>抽象是把想法从具体的实例中分离出来的步骤，因此，要根据他们的功能而不是实现细节来创建类。Java支持创建只暴漏接口而不包含方法实现的抽象的类。这种抽象技术的主要目的是把类的行为和实现细节分离开。<br>抽象和封装是互补的概念。一方面，抽象关注对象的行为。另一方面，封装关注对象行为的细节。一般是通过隐藏对象内部状态信息做到封装，因此，封装可以看成是用来提供抽象的一种策略。</p>
+</blockquote>
 </li>
 </ol>
 

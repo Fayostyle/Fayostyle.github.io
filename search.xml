@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[@hexo指南(一）]]></title>
+      <url>%2F2017%2F04%2F17%2Fhexo%E6%8C%87%E5%8D%97-%E4%B8%80%EF%BC%89%2F</url>
+      <content type="text"><![CDATA[文章命令行中输入：$ hexo new “new article”之后在source/_posts目录下面，多了一个new-article.md的文件。打开之后我们会看到： 1234title: new articledate: 2014-11-01 20:10:33tags:--- 文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。 属性文章可以拥有如下属性：Setting Description Defaultlayout Layout post或pagetitle 文章的标题date 创建日期 文件的创建日期updated 修改日期 文件的修改日期comments 是否开启评论 truetags 标签categories 分类permalink url中的名字 文件名动态博客中通过发布文章页面设置的各种属性，在hexo里要这样设置。 分类和标签例如：categories: 日记tags: Hexo node.js 摘要同wordpress一样，之上的内容为摘要。layout如果你修改了layout，在scaffolds文件夹里一定要有名字对应的模版文件，否则会采用默认模版。文件名在配置文件中的new_post_name项可以设置文件名，默认为:title，也就是你在命令行输入的名字。文件名可以为下面几个变量和字符串常量的任意组合：Variable Description:title Escaped title (lower case and replace spaces with dash):year Created year (4-digit):month Created month (2-digit):i_month Created month (Without leading zeros):day Created day (2-digit):i_day Created day (Without leading zeros) 草稿草稿相当于很多博客都有的“私密文章”功能。$ hexo new draft “new draft”会在source/_drafts目录下生成一个new-draft.md文件。但是这个文件不被显示在页面上，链接也访问不到。也就是说如果你想把某一篇文章移除显示，又不舍得删除，可以把它移动到_drafts目录之中。如果你希望强行预览草稿，更改配置文件：render_drafts: true或者，如下方式启动server：$ hexo server –drafts下面这条命令可以把草稿变成文章，或者页面：$ hexo publish [layout]]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[@web.xml配置过滤器报错]]></title>
+      <url>%2F2017%2F04%2F17%2Fweb-xml%E9%85%8D%E7%BD%AE%E8%BF%87%E6%BB%A4%E5%99%A8%E6%8A%A5%E9%94%99%2F</url>
+      <content type="text"><![CDATA[在web.xml配置过滤器报错误cvc-complex-type.2.4.a: Invalid content was found starting with element ‘init-param’. One of ‘{“http:// java.sun.com/xml/ns/javaee”:description, “http://java.sun.com/xml/ns/javaee&quot;:display-name, “http:// java.sun.com/xml/ns/javaee”:icon, “http://java.sun.com/xml/ns/javaee&quot;:filter-name}‘ is expected. web.xml 过滤器配置 -->12345678910111213&lt;filter&gt; &lt;init-param&gt; &lt;param-name&gt;encoding&lt;/param-name&gt; &lt;param-value&gt;UTF-8&lt;/param-value&gt; &lt;/init-param&gt; &lt;init-param&gt; &lt;param-name&gt;path&lt;/param-name&gt; &lt;param-value&gt;d://&lt;/param-value&gt; &lt;/init-param&gt; &lt;filter-name&gt;hello_filter1&lt;/filter-name&gt; &lt;filter-class&gt;me.fayostyle.filter1.HelloFilter&lt;/filter-class&gt;&lt;/filter&gt; 虽然报错，但是过滤器可以正常运行！]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[@就是想喷自己]]></title>
       <url>%2F2017%2F04%2F14%2F%E5%B0%B1%E6%98%AF%E6%83%B3%E5%96%B7%E8%87%AA%E5%B7%B1%2F</url>
       <content type="text"><![CDATA[垃圾！废物！菜逼！能干好个什么事？！！拿不到个offer，更别说以后的事情？？活该你他妈这样那样的不顺！不知道你他妈一天天的在干什么事情！]]></content>

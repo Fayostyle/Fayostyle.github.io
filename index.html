@@ -423,15 +423,7 @@
         
           <h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><p>命令行中输入：<br>$ hexo new “new article”<br>之后在source/_posts目录下面，多了一个new-article.md的文件。<br>打开之后我们会看到：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: new article</div><div class="line">date: 2014-11-01 20:10:33</div><div class="line">tags:</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。<br>文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。<br>新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。</p>
-<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><p>文章可以拥有如下属性：<br>Setting    Description    Default<br>layout    Layout    post或page<br>title    文章的标题<br>date    创建日期    文件的创建日期<br>updated    修改日期    文件的修改日期<br>comments    是否开启评论    true<br>tags    标签<br>categories    分类<br>permalink    url中的名字    文件名<br>动态博客中通过发布文章页面设置的各种属性，在hexo里要这样设置。</p>
-<h1 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h1><p>例如：<br>categories:</p>
-<ul>
-<li>日记<br>tags:</li>
-<li>Hexo</li>
-<li>node.js</li>
-</ul>
-<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>同wordpress一样，
+<p>文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。<br>文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。<br>新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。<br>
           <!--noindex-->
           <div class="post-more-link text-center">
             <a class="btn" href="/2017/04/17/hexo指南-一）/#more" rel="contents">
@@ -586,12 +578,14 @@
 
       
         
-          
-            <h2 id="在web-xml配置过滤器报错误"><a href="#在web-xml配置过滤器报错误" class="headerlink" title="在web.xml配置过滤器报错误"></a>在web.xml配置过滤器报错误</h2><p>cvc-complex-type.2.4.a: Invalid content was found starting with element ‘init-param’. One of ‘{“http://<br> java.sun.com/xml/ns/javaee”:description, “<a href="http://java.sun.com/xml/ns/javaee&quot;:display-name" target="_blank" rel="external">http://java.sun.com/xml/ns/javaee&quot;:display-name</a>, “http://<br> java.sun.com/xml/ns/javaee”:icon, “<a href="http://java.sun.com/xml/ns/javaee&quot;:filter-name}" target="_blank" rel="external">http://java.sun.com/xml/ns/javaee&quot;:filter-name}</a>‘ is expected.</p>
-<h2 id="web-xml"><a href="#web-xml" class="headerlink" title="web.xml"></a>web.xml</h2> <figure class="highlight plain"><figcaption><span>过滤器配置 --></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;filter&gt;</div><div class="line">	&lt;init-param&gt;</div><div class="line">		&lt;param-name&gt;encoding&lt;/param-name&gt;</div><div class="line">		&lt;param-value&gt;UTF-8&lt;/param-value&gt;</div><div class="line">	&lt;/init-param&gt;</div><div class="line">	&lt;init-param&gt;</div><div class="line">		&lt;param-name&gt;path&lt;/param-name&gt;</div><div class="line">		&lt;param-value&gt;d://&lt;/param-value&gt;</div><div class="line">	&lt;/init-param&gt;</div><div class="line">	</div><div class="line">	&lt;filter-name&gt;hello_filter1&lt;/filter-name&gt;</div><div class="line">	&lt;filter-class&gt;me.fayostyle.filter1.HelloFilter&lt;/filter-class&gt;</div><div class="line">&lt;/filter&gt;</div></pre></td></tr></table></figure>
-<p><img src="/uploads/过滤器error1.png" alt=""><br><img src="/uploads/过滤器error1.png" alt=""></p>
-<h2 id="虽然报错，但是过滤器可以正常运行！"><a href="#虽然报错，但是过滤器可以正常运行！" class="headerlink" title="虽然报错，但是过滤器可以正常运行！"></a>虽然报错，但是过滤器可以正常运行！</h2>
-          
+          <h2 id="在web-xml配置过滤器报错误"><a href="#在web-xml配置过滤器报错误" class="headerlink" title="在web.xml配置过滤器报错误"></a>在web.xml配置过滤器报错误</h2>
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/04/17/web-xml配置过滤器报错/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

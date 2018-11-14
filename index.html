@@ -427,12 +427,14 @@
 
       
         
-          
-            <p> 还是回归到以前，一边看视频，一边看源码，一边写，这样一天集中精神，大概一节半的时间。</p>
-<p>孙总你好，我叫黄畔，男，目前是西安电子科技大学信息安全专业的大三学生。这是我的一封求职信，首要目标在于求得一份服务器端开发暑期实习生的工作，其次的目标是好好表现争取留在陪我和你共事。因为锐波和陪我的招聘中，都没有实习生岗位而且要求颇高，我只好直接给你发邮件了。<br>之所以写下这封求职信，很大一部分原因，是对你的个人崇拜，你的成长历程和思维方式，特别是“财富自由革命之路”都对我三观改变很大。这也算是我的人生战略，找一个个人魅力爆表同时有潜力的好老板，以后一定不会差的。我想先简单介绍一下我的情况。因为家里条件不好，就是很穷，所以从小就想着要赚钱，就是要正当地赚很多钱，实现财富自由，这个三观很正吧。来大学的第一年，一边按部就班学习，一边思考着怎么创业赚钱，那段时间真是辗转反侧，夜夜难眠啊。想了很多东西，付诸实践的却很少，不过至少我把未来几年的事情都想通了。于是决定做技术开发，到现在自学了一年多时间的服务器端开发（后台开发），中间走过了很多弯路，但还是坚持下来了，但是到现在的水平还是不足以支撑我踏入BAT的大门，最近寻找暑期实习的日子真的很让我沮丧，难受挫败都形容不出我现在的心情，根本就无法用语言描述。想哭又哭不出来，想狠狠地揍自己一顿，其实也没有卵用。回想这三年的事情，我本身还是在很努力地去完成既定的目标，但是一个人闷头干收不到一点反馈，效果很不好，很多次机会从我面前飘过，都没有及时抓住。认真反思后，从中我找出了自己的两个缺点，不够坚持和自以为很牛逼。<br>人生很长，不以一时成败论英雄，我还是需要保持乐观的心态，努力去争取其他机会。我也没有思考太多，进不去BAT的大门，那我就不去了！我想选择一条更牛逼点的道路，一条不论是成长速度还是发展潜力都远大于入职其他公司的发展道路，那就是跟着你干。我羡慕你的人生，然而自己做不到，那么向你靠近也是不错的主意。陪我或许不会成为超越bat的巨头，但是未来十年新生的巨头中，背后一定会出现你的身影。<br>一方面，我想要争取一个学习的机会，另一方面，我想跟着一个我信任崇拜的人参与改变世界（实现财富自由）。我迫切渴求得到贵公司的一次实习机会，有那么种预感，抓住这次机会，就能改变我的人生轨迹。现在的我微不足道，但是我能肯定地说，公司给了我学习机会，我也一定能为公司贡献力量创造价值。万分期待你的回信！<br>（附件上简历）</p>
-<p>我来自四川达州的农村，本地的县城也充其量是个二十八线城市，好在我还算争气，考上了一所还算可以的大学。从小我就有个当黑客的梦想，高中的时候去到县城里上学，周末都是泡在网吧逛各种黑客论坛。盗小学生的qq号，刷游戏装备是我做得最多的事情。那时候信息封闭，不知道什么叫做计算机系统，更不知道还有C语言这些东西。本来是可以为大学的学习铺垫一个更高起点的，但就是没有抓住机会。进入大学，我顺利被录入了喜爱的信息安全专业，本以为可以大展身手，却发现学校的课程并没有</p>
-
-          
+          <p>分布式架构详解<br>
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/04/26/五月份学习计划/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -699,23 +701,14 @@
 
       
         
-          
-            <h2 id="下载tomcat"><a href="#下载tomcat" class="headerlink" title="下载tomcat"></a>下载tomcat</h2><p>用浏览器打开tomcat官网：<a href="http://tomcat.apache.org/" target="_blank" rel="external">http://tomcat.apache.org/</a><br>在左侧的导航栏Download下方选择最新的Tomcat 9，点击页面下方的“ 64-bit Windows zip (pgp, md5, sha1)“进行下<br>下载完成</p>
-<h2 id="安装tomcat"><a href="#安装tomcat" class="headerlink" title="安装tomcat"></a>安装tomcat</h2><p>解压后即可使用</p>
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ol>
-<li>配置jdk的环境变量(博客中已有)</li>
-<li>在系统变量里新建变量名：CATALINA_BASE，变量值：E:\editor\apache-tomcat-9.0.0.M13</li>
-<li>在系统变量里新建变量名：CATALINA_HOME，变量值：E:\editor\apache-tomcat-9.0.0.M13</li>
-<li>在系统变量里打开PATH，添加变量值：%CATALINA_HOME%\lib;%CATALINA_HOME%\bin</li>
-<li>打开cmd，进入tomcat下的bin目录，执行“service.bat install”  附：service卸载命令：service.bat remove</li>
-</ol>
-<h2 id="启动tomcat"><a href="#启动tomcat" class="headerlink" title="启动tomcat"></a>启动tomcat</h2><blockquote>
-<p>尝试用git bash在bin目录下输入命令，失败，还是cmd才可以。！<br>点击bin目录下的startup.bat，或者在bin目录下面启动cmd，输入startup.bat,会出现cmd窗口显示启动信息，如果窗口闪退，则启动会失败！<br>停止服务即是shutdown.bat<br>在linux下，对应的启动和停止时startup.sh和shutdown.sh两个命令</p>
-</blockquote>
-<h2 id="测试安装是否成功"><a href="#测试安装是否成功" class="headerlink" title="测试安装是否成功"></a>测试安装是否成功</h2><p>使用浏览器打开<a href="http://localhost:8080/，若成功打开则表示tomcat安装且运行成功" target="_blank" rel="external">http://localhost:8080/，若成功打开则表示tomcat安装且运行成功</a></p>
-<p><a href="http://blog.csdn.net/zhouzezhou/article/details/52450810" target="_blank" rel="external">教程马克</a></p>
-
-          
+          <h2 id="下载tomcat"><a href="#下载tomcat" class="headerlink" title="下载tomcat"></a>下载tomcat</h2><p>用浏览器打开tomcat官网：<a href="http://tomcat.apache.org/">http://tomcat.apache.org/</a><br>在左侧的导航栏Download下方选择最新的Tomcat 9，点击页面下方的“ 64-bit Windows zip (pgp, md5, sha1)“进行下<br>下载完成<br>
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/02/win10下安装tomcat/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1409,14 +1402,16 @@
 
       
         
-          
-            <p>##下载myeclipse</p>
+          <p>##下载myeclipse</p>
 <ul>
-<li>MyEclipse企业级工作平台（MyEclipse Enterprise Workbench ，简称MyEclipse）是对EclipseIDE的扩展，利用它我们可以在数据库和JavaEE的开发、发布以及应用程序服务器的整合方面极大的提高工作效率。它是功能丰富的JavaEE集成开发环境，包括了完备的编码、调试、测试和发布功能，完整支持HTML,Struts,JSP,CSS,Javascript,Spring,SQL,Hibernate。<br>　　MyEclipse 是一个十分优秀的用于开发Java, J2EE的 Eclipse 插件集合，MyEclipse的功能非常强大，支持也十分广泛，尤其是对各种开源产品的支持十分不错。MyEclipse目前支持Java Servlet,AJAX, JSP, JSF, Struts,Spring, Hibernate,EJB3,JDBC数据库链接工具等多项功能。可以说MyEclipse几乎囊括了目前所有主流开源产品的专属eclipse开发工具。</li>
-</ul>
-<p>　　在结构上，MyEclipse的特征可以被分为7类：<br>　　1． JavaEE模型<br>　　2． WEB开发工具<br>　　3． EJB开发工具<br>　　4． 应用程序服务器的连接器<br>　　5． JavaEE项目部署服务<br>　　6． 数据库服务<br>　　7． MyEclipse整合帮助<br>　　对于以上每一种功能上的类别，在Eclipse中都有相应的功能部件，并通过一系列的插件来实现它们。MyEclipse结构上的这种模块化，可以让我们在不影响其他模块的情况下，对任一模块进行单独的扩展和升级。<br>　　简单而言，MyEclipse是Eclipse的插件，也是一款功能强大的JavaEE集成开发环境，支持代码编写、配置、测试以及除错，MyEclipse6.0以前版本需先安装Eclipse。MyEclipse6.0以后版本安装时不需安装Eclipse。</p>
-
-          
+<li>MyEclipse企业级工作平台（MyEclipse Enterprise Workbench ，简称MyEclipse）是对EclipseIDE的扩展，利用它我们可以在数据库和JavaEE的开发、发布以及应用程序服务器的整合方面极大的提高工作效率。它是功能丰富的JavaEE集成开发环境，包括了完备的编码、调试、测试和发布功能，完整支持HTML,Struts,JSP,CSS,Javascript,Spring,SQL,Hibernate。<br>　　MyEclipse 是一个十分优秀的用于开发Java, J2EE的 Eclipse 插件集合，MyEclipse的功能非常强大，支持也十分广泛，尤其是对各种开源产品的支持十分不错。MyEclipse目前支持Java Servlet,AJAX, JSP, JSF, Struts,Spring, Hibernate,EJB3,JDBC数据库链接工具等多项功能。可以说MyEclipse几乎囊括了目前所有主流开源产品的专属eclipse开发工具。
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/21/windows10下安装myeclipse/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
